@@ -1,5 +1,5 @@
 import { useClientOnce } from '@/hooks/useClientOnce';
-import { mockTelegramEnv, parseInitData, retrieveLaunchParams } from '@tma.js/sdk-react';
+import { mockTelegramEnv, parseInitData, retrieveLaunchParams } from '@telegram-apps/sdk-react';
 
 /**
  * Mocks Telegram environment in development mode.
@@ -29,36 +29,34 @@ export function useTelegramMock(): void {
     if (shouldMock) {
       const initDataRaw = new URLSearchParams([
         ['user', JSON.stringify({
-          id: 99281932,
-          first_name: 'Andrew',
-          last_name: 'Rogue',
-          username: 'rogue',
+          id: 5090981477,
+          first_name: 'Yaroslav',
+          last_name: 'Koval',
+          username: 'KovalYRS',
           language_code: 'en',
-          is_premium: true,
-          allows_write_to_pm: true,
+          allows_write_to_pm: true
         })],
-        ['hash', '89d6079ad6762351f38c6dbbc41bb53048019256a9443988af7a48bcad16ba31'],
-        ['auth_date', '1716922846'],
-        ['start_param', 'debug'],
-        ['chat_type', 'sender'],
-        ['chat_instance', '8428209589180549439'],
+        ['chat_instance', '8498779124332473527'],
+        ['chat_type', 'private'],
+        ['auth_date', '1719945821'],
+        ['hash', 'de212828a9569cad370ec7e97017e158f5b72ce3f8336b1a96ad1b9aba668a4b']
       ]).toString();
 
       mockTelegramEnv({
         themeParams: {
-          accentTextColor: '#6ab2f2',
-          bgColor: '#17212b',
-          buttonColor: '#5288c1',
+          accentTextColor: '#2481cc',
+          bgColor: '#ffffff',
+          buttonColor: '#2481cc',
           buttonTextColor: '#ffffff',
-          destructiveTextColor: '#ec3942',
-          headerBgColor: '#17212b',
-          hintColor: '#708499',
-          linkColor: '#6ab3f3',
-          secondaryBgColor: '#232e3c',
-          sectionBgColor: '#17212b',
-          sectionHeaderTextColor: '#6ab3f3',
-          subtitleTextColor: '#708499',
-          textColor: '#f5f5f5',
+          destructiveTextColor: '#ff3b30',
+          headerBgColor: '#efeff3',
+          hintColor: '#999999',
+          linkColor: '#2481cc',
+          secondaryBgColor: '#efeff3',
+          sectionBgColor: '#ffffff',
+          sectionHeaderTextColor: '#6d6d71',
+          subtitleTextColor: '#999999',
+          textColor: '#000000'
         },
         initData: parseInitData(initDataRaw),
         initDataRaw,

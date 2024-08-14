@@ -1,13 +1,12 @@
-# Telegram Mini Apps Next.js Template
+# Telegram Mini App Next.js Template
 
 This template demonstrates how developers can implement a web application on the Telegram
 Mini Apps platform using the following technologies and libraries:
 
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [TON Connect](https://docs.ton.org/develop/dapps/ton-connect/overview)
 - [@tma.js SDK](https://docs.telegram-mini-apps.com/packages/tma-js-sdk)
-- [Telegram UI](https://github.com/Telegram-Mini-Apps/TelegramUI)
+- [VK UI](https://vkcom.github.io/VKUI)
 
 > The template was created using [pnpm](https://pnpm.io/). Therefore, it is required to use
 > it for this project as well. Using other package managers, you will receive a corresponding error.
@@ -31,6 +30,8 @@ This project contains the following scripts:
 - `start`. Starts the Next.js server in production mode.
 - `lint`. Runs [eslint](https://eslint.org/) to ensure the code quality meets the required
   standards.
+- `deploy`. Starting the build of the project, and in the case of a successful build, 
+  all commits will be pushed to the origin repository
 
 To run a script, use the `pnpm run` command:
 
@@ -126,5 +127,5 @@ details.
 ## Useful Links
 
 - [Platform documentation](https://docs.telegram-mini-apps.com/)
-- [@tma.js/sdk-react documentation](https://docs.telegram-mini-apps.com/packages/tma-js-sdk-react)
+- [@telegram-apps/sdk-react documentation](https://docs.telegram-mini-apps.com/packages/tma-js-sdk-react)
 - [Telegram developers community chat](https://t.me/devs)

@@ -1,6 +1,6 @@
 'use client';
 
-import { type PropsWithChildren, useEffect, useMemo, useState } from 'react';
+import { type PropsWithChildren, useEffect } from 'react';
 import {
   SDKProvider,
   useLaunchParams,
@@ -10,16 +10,42 @@ import {
   bindMiniAppCSSVars,
   bindThemeParamsCSSVars,
   bindViewportCSSVars,
-} from '@tma.js/sdk-react';
-import { TonConnectUIProvider } from '@tonconnect/ui-react';
-import { AppRoot } from '@telegram-apps/telegram-ui';
+} from '@telegram-apps/sdk-react';
+
+import {
+  AdaptivityProvider,
+  ConfigProvider,
+  AppRoot
+} from '@vkontakte/vkui';
+
+import StoreProvider from '@/components/StoreProvider';
+
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+
+import { i18nStrings } from "@/i18n";
+
+import '@/app.css';
+import '@/tailwind.css';
+
+import { BackButtonTelegram, SettingsButtonTelegram } from '../buttonsTelegram';
 
 import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { ErrorPage } from '@/components/ErrorPage';
+
 import { useTelegramMock } from '@/hooks/useTelegramMock';
 import { useDidMount } from '@/hooks/useDidMount';
 
-import './styles.css';
+const i18nHook = i18n.use(initReactI18next);
+
+i18nHook.init({
+  resources: i18nStrings,
+  fallbackLng: "en",
+
+  interpolation: {
+    escapeValue: false
+  }
+});
 
 function App(props: PropsWithChildren) {
   const lp = useLaunchParams();
@@ -28,6 +54,11 @@ function App(props: PropsWithChildren) {
   const viewport = useViewport();
 
   useEffect(() => {
+    i18nHook.changeLanguage(lp.initData?.user?.languageCode)
+  }, [lp]);
+
+  useEffect(() => {
+    miniApp.setHeaderColor(miniApp.isDark ? '#19191a' : '#ffffff');
     return bindMiniAppCSSVars(miniApp, themeParams);
   }, [miniApp, themeParams]);
 
@@ -40,12 +71,20 @@ function App(props: PropsWithChildren) {
   }, [viewport]);
 
   return (
-    <AppRoot
+    <ConfigProvider
       appearance={miniApp.isDark ? 'dark' : 'light'}
-      platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'base'}
+      platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'android'}
     >
-      {props.children}
-    </AppRoot>
+      <AdaptivityProvider>
+        <AppRoot>
+          <div className="select-none">
+            {props.children}
+          </div>
+          <BackButtonTelegram />
+          <SettingsButtonTelegram />
+        </AppRoot>
+      </AdaptivityProvider>
+    </ConfigProvider>
   );
 }
 
@@ -57,9 +96,6 @@ function RootInner({ children }: PropsWithChildren) {
   }
 
   const debug = useLaunchParams().startParam === 'debug';
-  const manifestUrl = useMemo(() => {
-    return new URL('tonconnect-manifest.json', window.location.href).toString();
-  }, []);
 
   // Enable debug mode to see all the methods sent and events received.
   useEffect(() => {
@@ -69,13 +105,13 @@ function RootInner({ children }: PropsWithChildren) {
   }, [debug]);
 
   return (
-    <TonConnectUIProvider manifestUrl={manifestUrl}>
-      <SDKProvider acceptCustomStyles debug={debug}>
+    <SDKProvider acceptCustomStyles debug={debug}>
+      <StoreProvider>
         <App>
           {children}
         </App>
-      </SDKProvider>
-    </TonConnectUIProvider>
+      </StoreProvider>
+    </SDKProvider>
   );
 }
 
@@ -86,7 +122,7 @@ export function Root(props: PropsWithChildren) {
 
   return didMount ? (
     <ErrorBoundary fallback={ErrorPage}>
-      <RootInner {...props}/>
+      <RootInner {...props} />
     </ErrorBoundary>
-  ) : <div className="root__loading">Loading</div>;
+  ) : null;
 }

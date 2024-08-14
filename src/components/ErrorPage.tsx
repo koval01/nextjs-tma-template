@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect } from 'react';
 
 export function ErrorPage({
@@ -13,12 +15,12 @@ export function ErrorPage({
   }, [error]);
 
   return (
-    <div>
-      <h2>An unhandled error occurred!</h2>
+    <div className="p-2">
+      <b>An unhandled error occurred!</b>
       <blockquote>
-        <code>
+        <pre>
           {error.message}
-        </code>
+        </pre>
       </blockquote>
       {reset && <button onClick={() => reset()}>Try again</button>}
     </div>

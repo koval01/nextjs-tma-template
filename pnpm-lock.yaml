@@ -15,8 +15,8 @@ importers:
         specifier: ^1.1.3
         version: 1.1.3(@types/react@18.3.5)(react@18.3.1)
       '@vkontakte/icons':
-        specifier: ^2.139.0
-        version: 2.139.0(react@18.3.1)
+        specifier: ^2.141.0
+        version: 2.141.0(react@18.3.1)
       '@vkontakte/vkui':
         specifier: ^6.7.0
         version: 6.7.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -712,8 +712,8 @@ packages:
     peerDependencies:
       react: ^16.9.34 || ^17 || ^18
 
-  '@vkontakte/icons@2.139.0':
-    resolution: {integrity: sha512-ARbqKcPr5bkBS+tIeXV9sVIj5LB6qRJIaUm2wEPEHksUJaUO7XDJzXedHWPM0jDdHf5UnunjU2+eV951TH3Fgw==}
+  '@vkontakte/icons@2.141.0':
+    resolution: {integrity: sha512-D4To071ZVkeYYnB8BOFk1N5UYs5gdLCYTOQ/bvsCNlVdASvsam6nwsoag4GMaIKtO8GqwAqKXbasmZaawCB9yA==}
     peerDependencies:
       react: ^16.9.34 || ^17 || ^18
 
@@ -1642,7 +1642,6 @@ packages:
     resolution: {integrity: sha512-Auw9a4AxqWpa9GUfj370BMPzzyncfBABW8Mab7BGWBYDj4Isgq+cDKtx0i6u9jcX9pQDnswsaaOTgTmA5pEjuQ==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
-    deprecated: '"Please update to latest v2.3 or v2.2"'
 
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -3726,7 +3725,7 @@ snapshots:
       '@swc/helpers': 0.5.13
       react: 18.3.1
 
-  '@vkontakte/icons@2.139.0(react@18.3.1)':
+  '@vkontakte/icons@2.141.0(react@18.3.1)':
     dependencies:
       '@vkontakte/icons-sprite': 2.3.0(react@18.3.1)
       react: 18.3.1
@@ -3746,7 +3745,7 @@ snapshots:
   '@vkontakte/vkui@6.7.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@swc/helpers': 0.5.13
-      '@vkontakte/icons': 2.139.0(react@18.3.1)
+      '@vkontakte/icons': 2.141.0(react@18.3.1)
       '@vkontakte/vkjs': 1.3.0
       '@vkontakte/vkui-floating-ui': 0.2.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       date-fns: 3.6.0

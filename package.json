@@ -19,7 +19,7 @@
     "@vkontakte/icons": "^2.139.0",
     "@vkontakte/vkui": "^6.7.0",
     "dayjs": "^1.11.12",
-    "eruda": "^3.2.3",
+    "eruda": "^3.3.0",
     "i18next": "^23.15.1",
     "next": "^14.2.5",
     "normalize.css": "^8.0.1",

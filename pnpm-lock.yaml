@@ -24,8 +24,8 @@ importers:
         specifier: ^1.11.13
         version: 1.11.13
       eruda:
-        specifier: ^3.2.3
-        version: 3.2.3
+        specifier: ^3.4.0
+        version: 3.4.0
       i18next:
         specifier: ^23.15.1
         version: 23.15.1
@@ -1151,8 +1151,8 @@ packages:
     resolution: {integrity: sha512-LMHl3dXhTcfv8gM4kEzIUeTQ+7fpdA0l2tUf34BddXPkz2A5xJ5L/Pchd5BL6rdccM9QGvu0sWZzK1Z1t4wwyg==}
     engines: {node: '>=10.13.0'}
 
-  eruda@3.2.3:
-    resolution: {integrity: sha512-304e6QPmPGoFHh+nI0BJHBuGJFCh+VoRvpaFg4FIQA1+JS+DpjWCylLdbXp1O73735+47Wuls7+qUmB3khelmg==}
+  eruda@3.4.0:
+    resolution: {integrity: sha512-MSPJUwdKX8gJuWXzlKN0YcZUm8+XAMtntW+tmnvEpb1hUVQRxMiB/lxrqkuOBQ/SQJRXpIP1E0cADsRZMDjpXg==}
 
   es-abstract@1.23.3:
     resolution: {integrity: sha512-e+HfNH61Bj1X9/jLc5v1owaLYuHdeHHSQlkhCBiTK8rBvKaULl/beGMxwrMXjpYrv4pz22BlY570vVePA2ho4A==}
@@ -4180,7 +4180,7 @@ snapshots:
       graceful-fs: 4.2.11
       tapable: 2.2.1
 
-  eruda@3.2.3: {}
+  eruda@3.4.0: {}
 
   es-abstract@1.23.3:
     dependencies:

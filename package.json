@@ -30,7 +30,7 @@
     "react-topbar-progress-indicator": "^4.1.1"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.2",
+    "@cloudflare/next-on-pages": "^1.13.5",
     "@types/node": "^22.4.0",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",

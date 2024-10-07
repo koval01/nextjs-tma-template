@@ -52,8 +52,8 @@ importers:
         version: 4.1.1(react@18.3.1)
     devDependencies:
       '@cloudflare/next-on-pages':
-        specifier: ^1.13.2
-        version: 1.13.2(vercel@34.2.8)(wrangler@3.62.0)
+        specifier: ^1.13.5
+        version: 1.13.5(vercel@34.2.8)(wrangler@3.62.0)
       '@types/node':
         specifier: ^22.4.0
         version: 22.4.0
@@ -93,8 +93,8 @@ packages:
     resolution: {integrity: sha512-YLPHc8yASwjNkmcDMQMY35yiWjoKAKnhUbPRszBRS0YgH+IXtsMp61j+yTcnCE3oO2DgP0U3iejLC8FTtKDC8Q==}
     engines: {node: '>=16.13'}
 
-  '@cloudflare/next-on-pages@1.13.2':
-    resolution: {integrity: sha512-lIri+zuxj6SKqIlewOoC9g9dD5+GbUMAXRrkhApmWGekE0PFlEAR7tHHDkbMXix4ctp7K4lPBY/wWUd8oh+VtQ==}
+  '@cloudflare/next-on-pages@1.13.5':
+    resolution: {integrity: sha512-eKRrI14kCk6kuBIAO6WwMNSvH8fFzkMQj1G95/wLVW2xpUaU0EDxRcQJ0U9aB1tOm/sPWW76Udb92rxyrVJpBw==}
     hasBin: true
     peerDependencies:
       '@cloudflare/workers-types': ^4.20240208.0
@@ -1529,6 +1529,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -3102,7 +3103,7 @@ snapshots:
     dependencies:
       mime: 3.0.0
 
-  '@cloudflare/next-on-pages@1.13.2(vercel@34.2.8)(wrangler@3.62.0)':
+  '@cloudflare/next-on-pages@1.13.5(vercel@34.2.8)(wrangler@3.62.0)':
     dependencies:
       acorn: 8.12.1
       ast-types: 0.14.2

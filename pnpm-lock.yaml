@@ -18,8 +18,8 @@ importers:
         specifier: ^2.144.0
         version: 2.144.0(react@18.3.1)
       '@vkontakte/vkui':
-        specifier: ^6.7.0
-        version: 6.7.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^6.7.2
+        version: 6.7.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       dayjs:
         specifier: ^1.11.13
         version: 1.11.13
@@ -727,8 +727,8 @@ packages:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
 
-  '@vkontakte/vkui@6.7.0':
-    resolution: {integrity: sha512-bM6GgZw04yHWeF3fLz2odcnUZXkH7Ws2MpiA6n/Nt9ZDAdcfuGBm0bmKNkyAuDeE8bV06AWSX3NdUYn56SeLuw==}
+  '@vkontakte/vkui@6.7.2':
+    resolution: {integrity: sha512-p/aymZUtE1B6PSKoPbavQ3BpsXUKNeO0yqhJNLwXdi2tC7zQN4WCtZjsrnWSKwtSZaL4vTmMZcJXL4WX0CgrfQ==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -3743,7 +3743,7 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@vkontakte/vkui@6.7.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@vkontakte/vkui@6.7.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@swc/helpers': 0.5.13
       '@vkontakte/icons': 2.144.0(react@18.3.1)

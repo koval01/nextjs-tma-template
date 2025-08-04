@@ -24,8 +24,8 @@ importers:
         specifier: ^1.11.13
         version: 1.11.13
       eruda:
-        specifier: ^3.4.0
-        version: 3.4.0
+        specifier: ^3.4.3
+        version: 3.4.3
       i18next:
         specifier: ^24.2.1
         version: 24.2.1(typescript@5.8.3)
@@ -571,14 +571,14 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node-forge@1.3.11':
-    resolution: {integrity: sha512-FQx220y22OKNTqaByeBGqHWYz4cl94tpcxeFdvBo3wjG6XPBuZ0BNgNZRV5J5TFmmcsJ4IzsLkmGRiQbnYsBEQ==}
+  '@types/node-forge@1.3.13':
+    resolution: {integrity: sha512-zePQJSW5QkwSHKRApqWCVKeKoSOt4xvEnLENZPjyvm9Ezdf/EyDeJM7jqLzOwjVICQQzvLZ63T55MKdJB5H6ww==}
 
   '@types/node@16.18.11':
     resolution: {integrity: sha512-3oJbGBUWuS6ahSnEq1eN2XrCyf4YsWI8OyCvo7c64zQJNplk3mO84t53o8lfTk+2ji59g5ycfc6qQ3fdHliHuA==}
 
-  '@types/node@22.15.32':
-    resolution: {integrity: sha512-3jigKqgSjsH6gYZv2nEsqdXfZqIFGAV36XYYjf9KGZ3PSG+IhLecqPnI310RvjutyMwifE2hhhNEklOUrvx/wA==}
+  '@types/node@22.17.0':
+    resolution: {integrity: sha512-bbAKTCqX5aNVryi7qXVMi+OkB3w/OyblodicMbvE38blyAz7GxXf6XYhklokijuPwwVg9sDLKRxt0ZHXQwZVfQ==}
 
   '@types/node@22.4.0':
     resolution: {integrity: sha512-49AbMDwYUz7EXxKU/r7mXOsxwFr4BYbvB7tWYxVuLdb2ibd30ijjXINSMAHiEEZk5PCRBmW1gUeisn2VMKt3cQ==}
@@ -803,8 +803,8 @@ packages:
     resolution: {integrity: sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==}
     engines: {node: '>= 8'}
 
-  aproba@2.0.0:
-    resolution: {integrity: sha512-lYe4Gx7QT+MKGbDsA+Z+he/Wtef0BiwDOlK/XkBrdfsh9J/jPPXbX0tE9x9cl27Tmu5gg3QUbUrQYa/y+KOHPQ==}
+  aproba@2.1.0:
+    resolution: {integrity: sha512-tLIEcj5GuR2RSTnxNKdkK0dJ/GrC7P38sUkiDmDuHfsHmbagTFAxDVIBltoklXEVIQ/f14IL8IMJ5pn9Hez1Ew==}
 
   are-we-there-yet@2.0.0:
     resolution: {integrity: sha512-Ci/qENmwHnsYo9xKIcUJN5LeDKdJ6R1Z1j9V/J5wyq8nh/mYPEpIKJbBZXtZjG04HiK7zV/p6Vs9952MrMeUIw==}
@@ -1179,8 +1179,8 @@ packages:
     resolution: {integrity: sha512-LMHl3dXhTcfv8gM4kEzIUeTQ+7fpdA0l2tUf34BddXPkz2A5xJ5L/Pchd5BL6rdccM9QGvu0sWZzK1Z1t4wwyg==}
     engines: {node: '>=10.13.0'}
 
-  eruda@3.4.0:
-    resolution: {integrity: sha512-MSPJUwdKX8gJuWXzlKN0YcZUm8+XAMtntW+tmnvEpb1hUVQRxMiB/lxrqkuOBQ/SQJRXpIP1E0cADsRZMDjpXg==}
+  eruda@3.4.3:
+    resolution: {integrity: sha512-J2TsF4dXSspOXev5bJ6mljv0dRrxj21wklrDzbvPmYaEmVoC+2psylyRi70nUPFh1mTQfIBsSusUtAMZtUN+/w==}
 
   es-abstract@1.23.3:
     resolution: {integrity: sha512-e+HfNH61Bj1X9/jLc5v1owaLYuHdeHHSQlkhCBiTK8rBvKaULl/beGMxwrMXjpYrv4pz22BlY570vVePA2ho4A==}
@@ -2212,8 +2212,8 @@ packages:
       sass:
         optional: true
 
-  node-fetch-native@1.6.6:
-    resolution: {integrity: sha512-8Mc2HhqPdlIfedsuZoc3yioPuzp6b+L5jRCRY1QzuWZh2EGJVQrGppC6V6cF0bLdbW0+O2YpqCA25aF/1lvipQ==}
+  node-fetch-native@1.6.7:
+    resolution: {integrity: sha512-g9yhqoedzIUm0nTnTqAQvueMPVOuIY16bqgAJJC8XOOubYFNwz6IER9qs0Gq2Xd0+CecCKFjtdDTMA4u4xG06Q==}
 
   node-fetch@2.6.7:
     resolution: {integrity: sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==}
@@ -3107,8 +3107,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  ws@8.18.2:
-    resolution: {integrity: sha512-DMricUmwGZUVr++AEAe2uiVM7UoO9MAVZMDu05UQOaUII0lp+zOzLLU4Xqh/JvTqklB1T4uELaaPBKyjE1r4fQ==}
+  ws@8.18.3:
+    resolution: {integrity: sha512-PEIGCY5tSlUt50cqyMXfCzX+oOPqN0vuGqWzbcJ2xvnkzkq46oOpz7dQaTDBdfICb4N14+GARUDw2XV2N4tvzg==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -3169,8 +3169,8 @@ packages:
   zod@3.23.8:
     resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
 
-  zod@3.25.67:
-    resolution: {integrity: sha512-idA2YXwpCdqUSKRCACDE6ItZD9TZzy3OZMtpfLoh6oPR47lipysRrJfjzMqFxQ3uJuUPyUeWe1r9vLH33xO/Qw==}
+  zod@3.25.76:
+    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
 snapshots:
 
@@ -3546,13 +3546,13 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node-forge@1.3.11':
+  '@types/node-forge@1.3.13':
     dependencies:
-      '@types/node': 22.15.32
+      '@types/node': 22.17.0
 
   '@types/node@16.18.11': {}
 
-  '@types/node@22.15.32':
+  '@types/node@22.17.0':
     dependencies:
       undici-types: 6.21.0
 
@@ -3899,7 +3899,7 @@ snapshots:
       normalize-path: 3.0.0
       picomatch: 2.3.1
 
-  aproba@2.0.0: {}
+  aproba@2.1.0: {}
 
   are-we-there-yet@2.0.0:
     dependencies:
@@ -4178,7 +4178,7 @@ snapshots:
 
   debug@4.1.1:
     dependencies:
-      ms: 2.1.1
+      ms: 2.1.3
 
   debug@4.3.6:
     dependencies:
@@ -4280,7 +4280,7 @@ snapshots:
       graceful-fs: 4.2.11
       tapable: 2.2.1
 
-  eruda@3.4.0: {}
+  eruda@3.4.3: {}
 
   es-abstract@1.23.3:
     dependencies:
@@ -4905,7 +4905,7 @@ snapshots:
 
   gauge@3.0.2:
     dependencies:
-      aproba: 2.0.0
+      aproba: 2.1.0
       color-support: 1.1.3
       console-control-strings: 1.1.0
       has-unicode: 2.0.1
@@ -5342,9 +5342,9 @@ snapshots:
       stoppable: 1.1.0
       undici: 5.29.0
       workerd: 1.20240620.1
-      ws: 8.18.2
+      ws: 8.18.3
       youch: 3.3.4
-      zod: 3.25.67
+      zod: 3.25.76
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -5459,7 +5459,7 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  node-fetch-native@1.6.6: {}
+  node-fetch-native@1.6.7: {}
 
   node-fetch@2.6.7:
     dependencies:
@@ -5870,7 +5870,7 @@ snapshots:
 
   selfsigned@2.4.1:
     dependencies:
-      '@types/node-forge': 1.3.11
+      '@types/node-forge': 1.3.13
       node-forge: 1.3.1
 
   semver@6.3.1: {}
@@ -6261,7 +6261,7 @@ snapshots:
       consola: 3.4.2
       defu: 6.1.4
       mime: 3.0.0
-      node-fetch-native: 1.6.6
+      node-fetch-native: 1.6.7
       pathe: 1.1.2
       ufo: 1.6.1
 
@@ -6421,7 +6421,7 @@ snapshots:
 
   ws@8.18.0: {}
 
-  ws@8.18.2: {}
+  ws@8.18.3: {}
 
   xdg-app-paths@5.1.0:
     dependencies:
@@ -6471,4 +6471,4 @@ snapshots:
 
   zod@3.23.8: {}
 
-  zod@3.25.67: {}
+  zod@3.25.76: {}

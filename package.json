@@ -14,7 +14,7 @@
     "deploy": "npm run pages:build && wrangler pages deploy"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^2.5.0",
+    "@reduxjs/toolkit": "^2.8.2",
     "@telegram-apps/sdk-react": "^1.1.3",
     "@vkontakte/icons": "^2.144.0",
     "@vkontakte/vkui": "^6.7.2",
